@@ -1,78 +1,16 @@
 
-\documentclass{article}
+\documentclass[twoside]{article}
 \usepackage[chorded]{songs}
 \usepackage{textcomp}
+\usepackage{import}
 \noversenumbers
-
-\repchoruses
+\newcommand*\BlankPage{\newpage\null\thispagestyle{empty}\newpage}
 
 \newcommand{\apos}{\textquotesingle}
+\newcommand{\Chorus}{\beginverse* {\centering (Chorus)} \endverse}
 
 \begin{document}
 \songsection{Metal}
-\begin{songs}{}
-\beginsong{Cliffs of Gallipoli}[by={Sabaton}]
-\beginverse
-\[Dm]Hear them whisper,
-\[F]voices \[C]from the other \[Dm]side
-Hear them calling
-former \[A]foes now friends are \[F]resting side by \[C]side
-
-\[Dm]They will never
-\[F]leave our \[C]hearts or fade \[Dm]away
-live forever
-they were \[A]far to young to \[F]die in such a \[C]way
-
-\[Dm]how many \[B&]wasted lives
-\[F]how many \[C]dreams did fade a\[Dm]way
-broken \[B&]promises
-they \[F]won’t be coming \[C]home
-
-\[Gm]Oh mothers \[E&]wipe your tears
-your \[B&]sons will rest a \[F]million years
-\[Gm]found their \[E&]peace at last
-as \[B&]foe turned to \[F]friend
-and \[C]forgive
-And they \[B&]knew they’d die
-\endverse
-
-\beginchorus
-Gallipo\[Dm]li
-Left their \[C]letters in the \[Dm]sand
-\[B&]Such waste of life
-Gallipo\[Dm]li
-Dreams of freedom turned to \[Dm]dust
-\endchorus
-
-\beginverse
-^Hell is waiting ^where the ocean meets the ^sand
-Cliffs of burden
-where the ^soldiers rushed in^to a certain ^death
-
-^At the shoreline
-^Blood of ^heroes stains the ^land
-light a candle
-One for ^each of them who ^fought and died in ^vain
-
-^There is no ^enemy
-^There is no ^victory ^ 
-Only ^boys who ^lost their lives in the ^sand
-
-^Young men were ^sacrificed
-Their ^names are carved in ^stone and kept alive
-and for^ever we will ^honour the memory of ^them
-And they ^knew they would die
-\endverse
-
-\beginverse
-\[Gm]Oh mothers \[E&]wipe your tears
-your \[B&]sons will rest a \[F]million years
-\[Gm]found their \[E&]peace at last
-as \[B&]foe turned to \[F]friend
-and \[C]forgive
-And they \[B&]knew they\apos d die
-\endverse
-
-\endsong
-\end{songs}
+\newpage
+\input{artists/sabaton}
 \end{document}
